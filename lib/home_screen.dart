@@ -42,11 +42,12 @@ class HomeScreen extends StatelessWidget
               Column(
 
                 children: [
-                  SizedBox(height: 20,),
+                  //SizedBox(height: 20,),
                   Container(
-                    height:150,
-                    margin: EdgeInsets.all(20),
-                    padding: EdgeInsets.all(10),
+                    height:130,
+                      width:300,
+                    margin: EdgeInsets.all(10),
+                    padding: EdgeInsets.all(5),
                     decoration: BoxDecoration(
                         color: Colors.white70,
                         borderRadius: BorderRadius.circular(20),
@@ -75,7 +76,7 @@ class HomeScreen extends StatelessWidget
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
                                           fontFamily: 'Lateef',
-                                          fontSize: 30,
+                                          fontSize: 25,
                                         ),
                                       ),
 
@@ -84,10 +85,10 @@ class HomeScreen extends StatelessWidget
                                       SizedBox(width:20),
                                     ],
                                   ),
-                                  Row(
+                                   Row(
                                     children:
                                     [
-                                      SizedBox(width:20),
+                                       SizedBox(width:20),
                                       Expanded(
 
                                         child: Text(
@@ -134,6 +135,9 @@ class HomeScreen extends StatelessWidget
               SizedBox(height: 25,),
               Container(
                 height:80,
+
+                margin: EdgeInsets.all(5),
+
                  padding: EdgeInsets.all(9),
 
                 decoration: BoxDecoration(
@@ -156,7 +160,7 @@ class HomeScreen extends StatelessWidget
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             fontFamily: 'Lateef',
-                            fontSize: 23,
+                            fontSize: 20,
                           )
                       ),
                       const Text(
@@ -164,7 +168,7 @@ class HomeScreen extends StatelessWidget
                           textAlign: TextAlign.left,
                           style: TextStyle(
                             fontFamily: 'Lateef',
-                            fontSize: 15,
+                            fontSize: 12,
                           )
                       ),
                     ],
