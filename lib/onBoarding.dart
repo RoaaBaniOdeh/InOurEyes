@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:schoolapp/home_screen.dart';
+
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 var countdonaters=0;
@@ -130,6 +131,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                 ),
                 Spacer(),
                 FloatingActionButton(
+                  backgroundColor: Color(0xFF364F6B),
                   onPressed: () {
                     if (isLast)
                     {
@@ -145,7 +147,9 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                   },
                   child: Icon(
                     Icons.arrow_forward_ios,
+
                   ),
+
                 ),
               ],
             ),
@@ -172,7 +176,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
           style: TextStyle(
             fontFamily: 'ReemKufi',
             fontSize: 50,
-            color: Colors.purple,
+            color: const Color(0xFF364F6B),
           ),
 
       ),

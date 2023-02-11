@@ -50,6 +50,7 @@ class _studentinfoState extends State<studentinfo> {
               children: <Widget>[
                 Expanded(
                   child: TextButton(
+                    style:  TextButton.styleFrom(primary:Colors.black ),
                     onPressed:  currentStep !=2?details.onStepContinue:()async{
 
                     await FirebaseFirestore.instance.collection('needers').add(
@@ -62,6 +63,7 @@ class _studentinfoState extends State<studentinfo> {
                 SizedBox(width:10,),
                 Expanded(
                   child:TextButton(
+                    style:  TextButton.styleFrom(primary:Colors.black ),
                     onPressed: details.onStepCancel,
                     child: currentStep!=0? Text('الرجوع للخلف'):Text('الغاء'),
                 ),),
@@ -91,11 +93,6 @@ class _studentinfoState extends State<studentinfo> {
                       decoration:
                    InputDecoration(
                          alignLabelWithHint: true,
-                     enabledBorder: OutlineInputBorder(
-                       borderSide:
-                       BorderSide(width: 1, color: Colors.purpleAccent),
-                       borderRadius: BorderRadius.circular(25.0),
-                     ),
                    hintText: "اسم الطالب",
 
             ),
@@ -108,11 +105,7 @@ class _studentinfoState extends State<studentinfo> {
                    InputDecoration(
                        hintText: "رقم الهوية",
                       alignLabelWithHint: true,
-                     enabledBorder: OutlineInputBorder(
-                       borderSide:
-                       BorderSide(width: 1, color: Colors.purpleAccent),
-                       borderRadius: BorderRadius.circular(25.0),
-                     ),
+
         ),
       ),
                     SizedBox(height: 15,),
@@ -123,13 +116,10 @@ class _studentinfoState extends State<studentinfo> {
                      InputDecoration(
                             hintText: "رقم الهاتف",
                             alignLabelWithHint: true,
-                       enabledBorder: OutlineInputBorder(
-                         borderSide:
-                         BorderSide(width: 1, color: Colors.purpleAccent),
-                         borderRadius: BorderRadius.circular(25.0),
-                       ),
+
         ),
       ),
+                   SizedBox(height: 30,),
     ],
                  )
                  ),
@@ -140,11 +130,7 @@ class _studentinfoState extends State<studentinfo> {
                             decoration:
                         InputDecoration(
                            alignLabelWithHint: true,
-                          enabledBorder: OutlineInputBorder(
-                            borderSide:
-                            BorderSide(width: 1, color: Colors.purpleAccent),
-                            borderRadius: BorderRadius.circular(25.0),
-                          ),
+
                                   hintText: "اسم المدرسة",
 
         ),
@@ -153,7 +139,7 @@ class _studentinfoState extends State<studentinfo> {
                        Text('الصف',  ),
                          SfSlider(
 
-                             activeColor: Colors.purpleAccent,
+                             activeColor:Color(0xFF364F6B),
                                enableTooltip: true,
                               showTicks: true,
                               showLabels: true,
@@ -167,12 +153,13 @@ class _studentinfoState extends State<studentinfo> {
                         SizedBox(height: 15,),
                              Text('العمر',),
                           SfSlider(
-                                   activeColor: Colors.purpleAccent,
+
+                                   activeColor: Color(0xFF364F6B),
                                  enableTooltip: true,
                               showTicks: true,
                                   showLabels: true,
                                    value: age,
-                                     max: 50,
+                                     max: 20,
                                   onChanged:  (value){
                               print(value);
                              setState(()=>{age= value.toInt()});
@@ -189,15 +176,16 @@ class _studentinfoState extends State<studentinfo> {
                   TextFormField(
                     controller: detailsOfNeedController,
                       keyboardType: TextInputType.multiline,
-                      minLines: 10,
-                     maxLines: 500,
+                      minLines: 2,
+                     maxLines: 100,
                    decoration:
                    InputDecoration(
                        fillColor: Colors.white,
                        filled: true,
-                         border: OutlineInputBorder(borderRadius: BorderRadius.circular(5))
+
         ),
       ),
+                 SizedBox(height: 30,),
             ],
                )
                ),

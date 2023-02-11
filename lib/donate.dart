@@ -78,11 +78,7 @@ class _donateScreenState extends State<donateScreen> {
                   InputDecoration(
                     hintText: "اسم المتبرع",
                     alignLabelWithHint: true,
-                    enabledBorder: OutlineInputBorder(
-                      borderSide:
-                      BorderSide(width: 1, color: Colors.purpleAccent),
-                      borderRadius: BorderRadius.circular(25.0),
-                    ),
+
                   ),
                 ),
                 SizedBox(height: 15,),
@@ -93,11 +89,7 @@ class _donateScreenState extends State<donateScreen> {
                   InputDecoration(
                     hintText: "عنوان السكن",
                     alignLabelWithHint: true,
-                    enabledBorder: OutlineInputBorder(
-                      borderSide:
-                      BorderSide(width: 1, color: Colors.purpleAccent),
-                      borderRadius: BorderRadius.circular(25.0),
-                    ),
+
                   ),
                 ),
                 SizedBox(height: 15,),
@@ -108,11 +100,7 @@ class _donateScreenState extends State<donateScreen> {
                   InputDecoration(
                     hintText: "رقم الهاتف",
                     alignLabelWithHint: true,
-                    enabledBorder: OutlineInputBorder(
-                      borderSide:
-                      BorderSide(width: 1, color: Colors.purpleAccent),
-                      borderRadius: BorderRadius.circular(25.0),
-                    ),
+
                   ),
                 ),
                 SizedBox(height: 15,),
@@ -148,11 +136,7 @@ class _donateScreenState extends State<donateScreen> {
                           hintText: " ",
                           fillColor: Colors.white,
                           filled: true,
-                          enabledBorder: OutlineInputBorder(
-                            borderSide:
-                            BorderSide(width: 1, color: Colors.purpleAccent),
-                            borderRadius: BorderRadius.circular(25.0),
-                          ),
+
                         ),
                       )
                   )
@@ -168,11 +152,7 @@ class _donateScreenState extends State<donateScreen> {
                           hintText: "المادة التي يمكنك تدريسها",
                           fillColor: Colors.white,
                           filled: true,
-                          enabledBorder: OutlineInputBorder(
-                            borderSide:
-                            BorderSide(width: 1, color: Colors.purpleAccent),
-                            borderRadius: BorderRadius.circular(25.0),
-                          ),
+
                         ),
                       )
                   )
@@ -190,11 +170,7 @@ class _donateScreenState extends State<donateScreen> {
                               hintText: " العمر الذي تناسبه الملابس",
                               fillColor: Colors.white,
                               filled: true,
-                              enabledBorder: OutlineInputBorder(
-                                borderSide:
-                                BorderSide(width: 1, color: Colors.purpleAccent),
-                                borderRadius: BorderRadius.circular(25.0),
-                              ),
+
                             ),
                           ),
                           SizedBox(height: 15,),
@@ -246,11 +222,7 @@ class _donateScreenState extends State<donateScreen> {
                               hintText: "التخصص",
                               fillColor: Colors.white,
                               filled: true,
-                              enabledBorder: OutlineInputBorder(
-                                borderSide:
-                                BorderSide(width: 1, color: Colors.purpleAccent),
-                                borderRadius: BorderRadius.circular(25.0),
-                              ),
+
                             ),
                           ),
                           SizedBox(height: 15,),
@@ -266,11 +238,6 @@ class _donateScreenState extends State<donateScreen> {
                               hintText: "التطوع الذي بإمكانك تقديمه",
                               fillColor: Colors.white,
                               filled: true,
-                              enabledBorder: OutlineInputBorder(
-                                borderSide:
-                                BorderSide(width: 1, color: Colors.purpleAccent),
-                                borderRadius: BorderRadius.circular(25.0),
-                              ),
                             ),
                           ),
 
@@ -308,7 +275,7 @@ class _donateScreenState extends State<donateScreen> {
                   child:  Text('إرسال المعلومات',
                     style: TextStyle(
                       fontSize: 20.0,
-                      color:Colors.white54,
+                      color:Colors.white,
                     ),
                   ) ,
                   style:
